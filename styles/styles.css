@@ -1,3 +1,32 @@
-h1 {
-    color: red;
+.body {
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
 }
+.page-header {}
+.page-header__logo {}
+.page-header__nav {}
+.page-header__nav-link {
+    margin: 0.25px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration: none;
+}
+.btn {} .page-header__user-btn {}
+
+.main {}
+.home {}
+
+.main-header {} .home__main-header{}
+.offers {} .home__offers {}
+
+.about {} .home__about {}
+.upcoming {} .home__upcoming {}
+.listing {} .home_listing {}
+.contacts {} .home_contacts {}
+.doit {} .home__doit {}
+
+.page-footer {}
