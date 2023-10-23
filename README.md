@@ -1,2 +1,1 @@
-[# [bandimaf.github.io](https://bandimaf.github.io)
-](https://bandimaf.github.io)https://bandimaf.github.io
+[bandimaf.github.io](https://bandimaf.github.io)
