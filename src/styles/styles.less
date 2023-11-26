@@ -1,102 +1,81 @@
-.body, .html {
-
-}
-
 .body {
     font-family: "Open-Sans", sans-serif;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    font-size: 16px;
-    font-weight: 400;
     font-style: normal;
-    line-height: 1.375;
-}
-.page-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 147px;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    background-color: rgba(222, 222, 222, 0.5);
-    backdrop-filter: blur(20px);
-    z-index: 100;
-}
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
 
-.page-header__container{
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    max-width: 1414px;
-    width: 100%;
-    margin: 0 auto;
 }
-.page-header__logo {
-    flex-shrink: 0;
-    width: 202px;
-    height: 147px;
-    font-size: 0;
+.btm {
+    padding: 15px 40px;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: normal;
+    text-align: center;
 }
 
-.page-header__logo-img {
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 9%;
+    position: fixed;
     width: 100%;
+    height: 147px;
+    background-color: var(--1-header, rgba(222, 222, 222, 0.50));
+    backdrop-filter: blur(10px);
+}
+
+.header__logo {
     height: 100%;
 }
 
-.page-header__nav {
+.header__nav {
     display: flex;
-    align-items: baseline;
-    margin: 0 auto;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
-.page-header__nav-link {
-    margin: 0 25px;
-    color: #1F1E1E;
+
+.header__nav-link {
+    color: var(--1, #1F1E1E);
+    text-align: center;
     font-size: 18px;
     font-weight: 600;
-    line-height: 25px;
+    line-height: normal;
     text-decoration: none;
-    transition: color 0.2s;
-}
-.btn {
-} 
-
-/* перенести в btn */
-.page-header__user-btn {
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 15px 40px;
-    background-color: transparent;
-    border: 1px solid #1F1E1E;
-    outline: none;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #1F1E1E;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-    overflow: hidden;
-    cursor: pointer;
 }
 
-.page-header__user-btn:hover {
-    background-color: #1f1f1f;
-    color: #ffffff;
+.header__btm {
+    color: var(--1, #1F1E1E);
+    border: 1px solid var(--1, #1F1E1E);
 }
 
-.main {}
 .home {
-    padding-top: 147px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 217px;
+    gap: 80px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 70px;
+}
+
+.main-header-img {
+    width: 100%;
 }
 
 .main-header__title,
@@ -106,52 +85,129 @@
     padding-right: 40px;
     text-transform: uppercase;
     font-family: Lora;
-    font-weight: 400px;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 0;
 }
 
-.main-header__text {
-    max-width: 948px;
-    margin: 0 auto;
+.home__offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home__offers-text {
+    color: var(--1, #1F1E1E);
+    text-align: center;
+    font-family: Lora;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+    margin-top: 0;
 }
 
-.main-header__picture {
-    display: block;
-    margin-bottom: 70px;
-    position: relative;
-    width: 100%;
+.home__offers-btm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    flex-shrink: 0;
+    gap: 10%;
 }
 
-.main-header__picture::before {
-    content: '';
-    display: block;
-    width: 100%;
-    padding-top: 16.927%;
+.home__offers-btm-event {
+    background-color: #BC3324;
+    color: var(--1, #FFF);
+    border: 1px solid var(--1, #BC3324);
+    flex-shrink: 0;
 }
 
-.main-header {
-    padding-top: 100px 0;
-} .home__main-header{}
-.offers {} .home__offers {}
-
-.main-header__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.home__offers-btm-tenat {
+    color: var(--1, #1F1E1E);
+    border: 1px solid var(--1, #1F1E1E);
+    flex-shrink: 0;
 }
 
-.about {} .home__about {}
-.upcoming {} .home__upcoming {}
-.listing {} .home_listing {}
-.contacts {} .home_contacts {}
-.doit {} .home__doit {}
-
-.page-footer {
-    flex: 0 0 auto;
+.home__listing-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
 }
 
-
-.listing {
+.listing-events__title-container {
+    background-color: var(--1, #1F1E1E);
+    padding: 0 45px;
 }
+
+.listing-events__title {
+    color: var(--1, #FFF);
+    text-align: center;
+
+    font-family: Lora;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 533px;
+    height: 46px;
+}
+
+.listing-events__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.listing-events__card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 405px;
+    text-decoration: none;
+}
+
+.listing-events__card-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.listing-events__card-title {
+    color: var(--1, #1F1E1E);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+
+    /* костыли */
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.listing-events__card-discription {
+    color: var(--1, #1F1E1E);
+    font-size: 16px;
+    font-weight: 400;
+
+    /* костыли */
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.listing-events__card-date {
+    color: var(--1, #1F1E1E);
+    font-size: 14px;
+    font-weight: 300;
+
+    /* костыли */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
