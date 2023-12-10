@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('blocks/head.html')
+    <body class="body">
+        @@include('blocks/header.html')
+        <main>
+            <div class="home">
+                <header class="main-header">
+                    <h1 class="main-header__title">арт - пространство</h1>
+                    <picture class="main-header-picture">
+                        <img class="main-header-img" src="/Users/alinabelik/Documents/IT-academy/src/asssets/images/LENNI.svg" alt="">
+                    </picture>
+                    <p class="main-header__text">для людей, горящих сердец и делом<br>место для настоящего</p>
+                </header>
+                <section class="offers home__offers">
+                    <p class="home__offers-text">я хочу</p>
+                    <div class="home__offers-btm">
+                        <a class="home__offers-btm-event btm" href="">Провести мероприятие</a>
+                        <a class="home__offers-btm-tenat btm" href="">Стать арендатором</a>
+                    </div>
+                </section>
+                @@include('blocks/events.html')
+            </div>
+        </main>
+        @@include('blocks/footer.html')
+        </main>
+    </body>
+</html>
