@@ -1045,6 +1045,7 @@ textarea {
 .reserve__scheme-title {
   margin: 0 0 40px;
   padding: 6px 56px;
+  text-align: center;
   background-color: #1f1e1e;
   color: #FFFFFF;
   font-weight: 600;
@@ -1068,6 +1069,12 @@ textarea {
 .reserve__scheme-wrapper {
   position: relative;
   width: 100%;
+}
+.reserve__scheme-wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 51.15384%;
 }
 .reserve__scene {
   position: absolute;
@@ -1255,7 +1262,7 @@ textarea {
   text-transform: uppercase;
   margin-top: 0;
 }
-.offers__btm {
+.offers__btms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1292,7 +1299,7 @@ textarea {
   border: 1px solid;
 }
 .events {
-  padding: 120px 0 84px;
+  padding: 138px 0 90px;
 }
 .events--block {
   background-image: url("../assets/images/event_background.png");
@@ -1302,7 +1309,7 @@ textarea {
 .events__show-more {
   display: block;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 70px;
   margin-bottom: 100px;
   max-width: 128px;
   border: none;
@@ -1352,9 +1359,15 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .events__info-item {
   display: -webkit-box;
@@ -1656,6 +1669,10 @@ textarea {
 }
 .header__logo {
   display: inline-block;
+  width: 202px;
+  height: 147px;
+}
+.header__logo-img {
   width: 202px;
   height: 147px;
 }
@@ -2114,6 +2131,9 @@ textarea {
   white-space: nowrap !important;
 }
 @media (max-width: 1659px) {
+  body {
+    background-image: url(../assets/images/noise.png), url(../assets/images/bg_1340.png);
+  }
   .section-title {
     max-width: 604px;
   }
@@ -2130,7 +2150,21 @@ textarea {
     width: calc(33.3333% - 40px);
     margin: 0 20px 100px;
   }
+  .events__show-more {
+    padding-top: 60px;
+  }
   .header {
+    height: 111px;
+  }
+  .header__container {
+    height: 111px;
+  }
+  .header__logo {
+    width: 152px;
+    height: 111px;
+  }
+  .header__logo-img {
+    width: 152px;
     height: 111px;
   }
   .width624 {
@@ -2138,6 +2172,12 @@ textarea {
   }
 }
 @media (max-width: 1339px) {
+  body {
+    background-image: url(../assets/images/noise.png), url(../assets/images/bg_768.png);
+  }
+  .btn {
+    font-size: 14px;
+  }
   .section-title {
     max-width: 566px;
   }
@@ -2179,13 +2219,31 @@ textarea {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .events {
+    padding: 91px 0 40px;
+  }
   .events__services {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .events__services-description {
+    font-size: 14px;
+  }
   .events__info-wrapper {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .events__info-wrapper:last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .events__info-item {
+    margin: 0 50px 50px 50px;
+    max-width: 280px;
+  }
+  .events__info-item:last-child {
+    margin-top: 0;
   }
   .about__container {
     padding-left: 30px;
@@ -2212,10 +2270,6 @@ textarea {
   }
 }
 @media (max-width: 1019px) {
-  .card-event__text {
-    font-size: 14px;
-    line-height: 19px;
-  }
   .listing__events-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2256,6 +2310,18 @@ textarea {
         //   раскомментируем следующее свойство,
         //   чтобы скрыть наше меню:
         //   */
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  @supports ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
+    .header__nav {
+      background-color: rgba(222, 222, 222, 0.7);
+      -webkit-backdrop-filter: blur(20px);
+              backdrop-filter: blur(20px);
+    }
   }
   .header__nav-link {
     margin: 0 0 40px;
@@ -2306,11 +2372,18 @@ textarea {
   }
 }
 @media (max-width: 767px) {
+  body {
+    background-image: url(../assets/images/noise.png), url(../assets/images/bg_320.png);
+  }
   .section-title {
+    max-width: 405px;
     min-height: 42px;
     margin-bottom: 80px;
     padding: 11px 20px;
     font-size: 20px;
+  }
+  .section-title--services {
+    font-size: 16px;
   }
   .breadcrumbs {
     padding-left: 20px;
@@ -2319,10 +2392,35 @@ textarea {
   .breadcrumbs {
     display: none;
   }
+  .contacts-item__img {
+    width: 65px;
+    height: 65px;
+  }
+  .contacts-item__title {
+    font-size: 14px;
+  }
+  .check__label {
+    font-size: 12px;
+  }
+  .subscribe {
+    min-width: 320px;
+  }
+  .subscribe__title {
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+  }
+  .subscribe__check {
+    margin-left: 20px;
+  }
   .card-event__title {
     min-height: 44px;
     font-size: 16px;
     line-height: 22px;
+  }
+  .card-event__text {
+    font-size: 14px;
+    line-height: 19px;
   }
   .table__head,
   .table__body,
@@ -2447,13 +2545,51 @@ textarea {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .offers__text {
+    font-size: 13px;
+  }
+  .offers__btms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 25px;
+  }
+  .events {
+    padding: 0 0 40px;
+  }
+  .events__show-more {
+    padding-top: 50px;
+  }
   .events__services {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .events__services-description {
+    font-size: 13px;
+  }
   .events__info-wrapper {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .events__info-wrapper {
+    margin-top: 90px;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
+  .events__info-item {
+    margin: 0;
+    min-width: 224px;
   }
   .about__container {
     padding-left: 20px;
@@ -2470,7 +2606,15 @@ textarea {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .header__container {
+    height: 70px;
+    padding: 0;
+  }
   .header__logo {
+    width: 96px;
+    height: 70px;
+  }
+  .header__logo-img {
     width: 96px;
     height: 70px;
   }
@@ -2480,6 +2624,20 @@ textarea {
   .page-footer__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .page-footer__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 59px;
+  }
+  .page-footer__nav {
+    margin-left: 20px;
   }
   .event__container {
     padding-left: 20px;
