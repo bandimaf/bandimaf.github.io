@@ -12,48 +12,102 @@
 </head>
 
 <body class="body">
-  <header class="header">
-    <div class="header__container">
-      <a class="header__logo" href="home.html">
-        <svg class="header__logo-img" width="202px" height="147px">
-          <use xlink:href="assets/icons/symbols.svg#logo">
-        </svg>
-        <!-- <img class="header__logo-img" src="/Users/alinabelik/Documents/IT-academy/src/asssets/images/logo.svg" alt=""> -->
-      </a>
-      <nav class="header__nav">
-        <a class="header__nav-link" href="events.html">Мероприятия</a>
-        <a class="header__nav-link" href="">Блог</a>
-        <a class="header__nav-link" href="">О нас</a>
-        <a class="header__nav-link" href="">Контакты</a>
-      </nav>
-      <div class="header__right-block">
-        <div class="header__nav-user">
-          <a href="#" class="header__nav-user-link">
-            Александр С.
-          </a>
-          <a href="#" class="header__nav-logout">
-            <svg class="header__nav-logout-icon" width="24" height="24">
-              <use xlink:href="assets/icons/symbols.svg#door"></use>
-            </svg>
-          </a>
-        </div>
-        <a href="#" class="header__user-btn btn">
-          Войти
-          <svg class="header__user-icon" width="21" height="18">
-            <use xlink:href="assets/icons/symbols.svg#user"></use>
+  <div class="body">
+    <header class="page-header">
+      <div class="page-header__container">
+        <a href="#" class="page-header__logo">
+          <svg class="page-header__logo-icon" width="202" height="147" viewBox="0 0 202 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="147" height="147" fill="#1F1E1E" />
+            <path d="M39.9655 72.439H26.6335V50.032H26.6005V49.999H21.9145V73H39.9655V72.439Z" fill="white" />
+            <path d="M43.9316 73H62.0486V72.439H48.6176V61.285H59.1116V60.691H48.6176V50.56H62.0486V49.999H43.9316V73Z" fill="white" />
+            <path d="M70.6993 73V50.56C73.5703 50.56 82.4143 51.649 83.0743 64.453V73H87.7603V49.999H83.0743V60.328C81.6553 54.19 77.1673 49.999 70.6993 49.999H66.0133V73H70.6993Z" fill="white" />
+            <path d="M97.3893 73V50.56C100.26 50.56 109.104 51.649 109.764 64.453V73H114.45V49.999H109.764V60.328C108.345 54.19 103.857 49.999 97.3893 49.999H92.7033V73H97.3893Z" fill="white" />
+            <path d="M119.393 73H124.079V49.999H119.393V73Z" fill="white" />
+            <rect x="81" y="92" width="121" height="42" fill="#BC3324" />
+            <path d="M108.922 124H109.462L112.402 115.45H120.952L124.282 124H128.752L120.652 103.09H116.122L108.922 124ZM116.422 103.75L120.772 114.94H112.582L116.422 103.75Z" fill="white" />
+            <path d="M132.644 103.09V124H136.904V116.77H141.974L146.864 123.97H151.724L146.564 116.32C149.564 115.54 151.844 113.68 151.844 109.51C151.844 104.29 148.034 102.64 143.594 102.64C138.914 102.64 137.564 106.15 136.904 110.05V103.09H132.644ZM138.074 107.47C138.884 104.53 140.984 103.33 142.844 103.18C147.314 102.76 147.494 105.61 147.494 109.51C147.494 115.84 144.134 116.26 141.254 116.26H136.904C136.904 116.26 136.784 112.12 138.074 107.47Z" fill="white" />
+            <path d="M162.084 103.6L162.114 124H166.374V103.6H174.984V103.09H153.474V103.6H162.084Z" fill="white" />
           </svg>
         </a>
-        <button type="button" class="header__nav-toggle"></button>
+
+        <nav class="page-header__nav">
+          <a href="#" class="page-header__nav-link">Мероприятия</a>
+          <a href="#" class="page-header__nav-link">Блог</a>
+          <a href="#" class="page-header__nav-link">О нас</a>
+          <a href="#" class="page-header__nav-link">Контакты</a>
+
+          <div class="page-header__nav-user">
+            <a href="#" class="page-header__nav-user-link">
+              Александр С.
+            </a>
+
+            <a href="#" class="page-header__nav-logout">
+              <svg class="page-header__nav-logout-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#1f1e1e" fill="transparent">
+                  <path d="M10 17L15 12L10 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15 12H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </nav>
+
+        <div class="page-header__right-block">
+          <a href="#" class="page-header__user-btn">
+            Войти
+            <svg class="page-header__user-icon" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.3 9.22C11.8336 8.75813 12.2616 8.18688 12.5549 7.54502C12.8482 6.90316 13 6.20571 13 5.5C13 4.17392 12.4732 2.90215 11.5355 1.96447C10.5979 1.02678 9.32608 0.5 8 0.5C6.67392 0.5 5.40215 1.02678 4.46447 1.96447C3.52678 2.90215 3 4.17392 3 5.5C2.99999 6.20571 3.1518 6.90316 3.44513 7.54502C3.73845 8.18688 4.16642 8.75813 4.7 9.22C3.30014 9.85388 2.11247 10.8775 1.27898 12.1685C0.445495 13.4596 0.00147185 14.9633 0 16.5C0 16.7652 0.105357 17.0196 0.292893 17.2071C0.48043 17.3946 0.734784 17.5 1 17.5C1.26522 17.5 1.51957 17.3946 1.70711 17.2071C1.89464 17.0196 2 16.7652 2 16.5C2 14.9087 2.63214 13.3826 3.75736 12.2574C4.88258 11.1321 6.4087 10.5 8 10.5C9.5913 10.5 11.1174 11.1321 12.2426 12.2574C13.3679 13.3826 14 14.9087 14 16.5C14 16.7652 14.1054 17.0196 14.2929 17.2071C14.4804 17.3946 14.7348 17.5 15 17.5C15.2652 17.5 15.5196 17.3946 15.7071 17.2071C15.8946 17.0196 16 16.7652 16 16.5C15.9985 14.9633 15.5545 13.4596 14.721 12.1685C13.8875 10.8775 12.6999 9.85388 11.3 9.22ZM8 8.5C7.40666 8.5 6.82664 8.32405 6.33329 7.99441C5.83994 7.66476 5.45542 7.19623 5.22836 6.64805C5.0013 6.09987 4.94189 5.49667 5.05764 4.91473C5.1734 4.33279 5.45912 3.79824 5.87868 3.37868C6.29824 2.95912 6.83279 2.6734 7.41473 2.55764C7.99667 2.44189 8.59987 2.5013 9.14805 2.72836C9.69623 2.95542 10.1648 3.33994 10.4944 3.83329C10.8241 4.32664 11 4.90666 11 5.5C11 6.29565 10.6839 7.05871 10.1213 7.62132C9.55871 8.18393 8.79565 8.5 8 8.5ZM19.71 6.13C19.617 6.03627 19.5064 5.96188 19.3846 5.91111C19.2627 5.86034 19.132 5.8342 19 5.8342C18.868 5.8342 18.7373 5.86034 18.6154 5.91111C18.4936 5.96188 18.383 6.03627 18.29 6.13L16.29 8.13L15.67 7.5C15.577 7.40627 15.4664 7.33188 15.3446 7.28111C15.2227 7.23034 15.092 7.2042 14.96 7.2042C14.828 7.2042 14.6973 7.23034 14.5754 7.28111C14.4536 7.33188 14.343 7.40627 14.25 7.5C14.0637 7.68736 13.9592 7.94081 13.9592 8.205C13.9592 8.46919 14.0637 8.72264 14.25 8.91L15.59 10.25C15.7774 10.4363 16.0308 10.5408 16.295 10.5408C16.5592 10.5408 16.8126 10.4363 17 10.25L19.67 7.58C19.771 7.48932 19.8524 7.37904 19.9094 7.25588C19.9664 7.13272 19.9977 6.99924 20.0014 6.86359C20.0052 6.72794 19.9813 6.59294 19.9312 6.46682C19.8811 6.34071 19.8058 6.22611 19.71 6.13Z" fill="#1f1e1e" />
+            </svg>
+          </a>
+
+          <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+        </div>
       </div>
 
+    </header>
+  </div>
+  <!-- <header class="header">
+  <div class="header__container">
+    <a class="header__logo" href="home.html">
+      <svg class="header__logo-img">
+        <use xlink:href="assets/icons/symbols.svg#logo">
+      </svg>
+    </a>
+    <nav class="header__nav">
+      <a class="header__nav-link" href="events.html">Мероприятия</a>
+      <a class="header__nav-link" href="">Блог</a>
+      <a class="header__nav-link" href="">О нас</a>
+      <a class="header__nav-link" href="">Контакты</a>
+    </nav>
+    <div class="header__right-block">
+      <div class="header__nav-user">
+        <a href="#" class="header__nav-user-link">
+          Александр С.
+        </a>
+        <a href="#" class="header__nav-logout">
+          <svg class="header__nav-logout-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#door"></use>
+          </svg>
+        </a>
+      </div>
+      <a href="#" class="header__user-btn btn">
+        Войти
+        <svg class="header__user-icon" width="21" height="18">
+          <use xlink:href="assets/icons/symbols.svg#user"></use>
+        </svg>
+      </a>
+      <button type="button" class="header__nav-toggle" id="js-navToggle"></button>
     </div>
-  </header>
+
+  </div>
+</header> -->
   <main class="main">
     <article class="home">
-      <div class="pp">
+      <div class="pp" id="js-eventPP">
         <div class="pp__container">
           <div class="pp__sticky-close">
-            <button type="button" class="pp__sticky-btn">
+            <button type="button" class="x-btn pp__sticky-btn js-ppCloseBtn">
               <svg class="pp__btn-icon" width="24" height="24">
                 <use xlink:href="assets/icons/symbols.svg#x"></use>
               </svg>
@@ -157,7 +211,7 @@
                 </label>
                 <div class="form__btns">
                   <button type="submit" class="form__btn btn">Отправить</button>
-                  <button type="button" class="form__btn-close btn">Закрыть</button>
+                  <button type="button" class="form__btn-close btn js-ppCloseBtn">Закрыть</button>
                 </div>
               </div>
             </div>
@@ -179,9 +233,123 @@
         <section class="offers">
           <div class="offers__container">
             <p class="offers__text">я хочу:</p>
-            <div class="offers__btm">
-              <a class="offers__btm-event btn" href="for-pp.html">Провести мероприятие</a>
+            <div class="offers__btms">
+              <button class="offers__btm-event btn" id="js-eventOpenBtn">Провести мероприятие</button>
               <a class="offers__btm-tenat btn" href="">Стать арендатором</a>
+            </div>
+          </div>
+          <div class="pp" id="js-eventPP">
+            <div class="pp__container">
+              <div class="pp__sticky-close">
+                <button type="button" class="x-btn pp__sticky-btn js-ppCloseBtn">
+                  <svg class="pp__btn-icon" width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#x"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="pp__wrapper">
+                <h3 class="pp__title">
+                  Заполните форму
+                  <br />
+                  и мы подберем площадку
+                </h3>
+                <div class="pp__form form">
+                  <div class="form__list">
+                    <div class="form__field field form__field--w50">
+                      <h6 class="field__title">
+                        Формат мероприятия:
+                      </h6>
+                      <div class="field__radio radio">
+                        <label class="radio__label">
+                          <input class="radio__input" type="radio" name="format" value="seminar" checked>
+                          <span class="radio__mark"></span>
+                          <span class="radio__label">Мастер-класс/семинар</span>
+                        </label>
+                        <label class="radio__label">
+                          <input type="radio" name="format" value="concert" class="radio__input" />
+                          <span class="radio__mark"></span>
+                          <span class="radio__name">Концерт/выступление</span>
+                        </label>
+                        <label class="radio__label">
+                          <input type="radio" name="format" value="show" class="radio__input" />
+                          <span class="radio__mark"></span>
+                          <span class="radio__name">Выставка/показ</span>
+                        </label>
+                        <label class="radio__label">
+                          <input type="radio" name="format" value="other" class="radio__input" />
+                          <span class="radio__mark"></span>
+                          <span class="radio__name">Другое</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form_group">
+                      <div class="form__field field form__field--mb30">
+                        <h6 class="field__title">Планируемое количество посетителей:</h6>
+                        <select name="amount" class="field__select">
+                          <option value="20">
+                            до 20 человек
+                          </option>
+                          <option value="100">
+                            от 20 до 100 человек
+                          </option>
+                          <option value="500">
+                            от 100 до 500 человек
+                          </option>
+                          <option value="501">
+                            более 500 человек
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form__field field"></div>
+                      <h6 class="field__title">Дата проведения:</h6>
+                      <div class="field__inputs">
+                        <input class="field__input field__input--w55 field__input--datetime" type="text" placeholder="ДД" />
+                        <input class="field__input field__input--w55 field__input--datetime" type="text" placeholder="ММ" />
+                        <input class="field__input field__input--w110" type="text" placeholder="ГГГГ" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__section">
+                    <h6 class="field__title">
+                      Контактные данные:
+                    </h6>
+                    <div class="form__list form__list--mb50">
+                      <label class="form__field field form__field--w50">
+                        <span class="field__label">Имя*</span>
+                        <input type="text" class="field__input" placeholder="Имя" required name="name">
+                      </label>
+                      <label class="form__field field form__field--w50">
+                        <span class="field__label">Фамилия*</span>
+                        <input type="text" class="field__input" placeholder="Фамилия" required name="lastname">
+                      </label>
+                      <label class="form__field field form__field--w50">
+                        <span class="field__label">Телефон*</span>
+                        <input type="tel" class="field__input" placeholder="+7()___ ___ ___" required name="phone">
+                      </label>
+                      <label class="form__field field form__field--w50">
+                        <span class="field__label">Email*</span>
+                        <input type="email" class="field__input" placeholder="Email" required name="email">
+                      </label>
+                    </div>
+
+                    <label class="form__field field form__field--mb30">
+                      <span class="field__label field__label--textarea">Есть пожелания? Напишите нам:</span>
+                      <textarea name="wish" class="field__textarea"></textarea>
+                    </label>
+
+                    <label class="form__check check form__check--mb40">
+                      <input type="checkbox" class="check__input" name="agree" required />
+                      <span class="check__mark"></span>
+                      <span class="check__label">Я соглашаюсь с пользовательским соглашением и с политикой
+                        использования персональных данных</span>
+                    </label>
+                    <div class="form__btns">
+                      <button type="submit" class="form__btn btn">Отправить</button>
+                      <button type="button" class="form__btn-close btn js-ppCloseBtn">Закрыть</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -313,7 +481,7 @@
             <div class="blog__list">
               <div class="blog__item-line"></div>
               <!-- prettier-ignore  -->
-              <article class="blog-card blog-card">
+              <article class="blog-card">
                 <a href="#" class="blog-card__link">
                   <picture class="blog-card__picture">
                     <!-- <source type="image/webp" srcset="@@image/webp"/> -->
@@ -323,18 +491,20 @@
                   <div class="blog-card__wrapper">
                     <time class="blog-card__date" datetime="2022-11-26">26.11.2022</time>
                     <h3 class="blog-card__name">Фотосессия в стенах Театра драмы</h3>
-                    <p class="blog-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было</p>
+                    <!-- <p class="blog-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было</p> -->
+                    <div class="blog-card__link-button">
+                      <p class="blog-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было</p>
+                      <button type="button" class="blog-card__button-icon">
+                        <svg class="slider__icon" width="91px" height="60px">
+                          <use xlink:href="assets/icons/symbols.svg#slider_right">
+                        </svg>
+                      </button>
+                    </div>
                   </div>
-                  <div class="blog-card__link-button">
-                    <button type="button" class="blog-card__button-icon">
-                      <svg class="slider__icon" width="91px" height="60px">
-                        <use xlink:href="assets/icons/symbols.svg#slider_right">
-                      </svg>
-                    </button>
-                  </div>
+
                 </a>
               </article>
-              <article class="blog-card blog-card blog-card--border">
+              <article class="blog-card blog-card--border">
                 <a href="#" class="blog-card__link">
                   <picture class="blog-card__picture">
                     <!-- <source type="image/webp" srcset="@@image/webp"/> -->
@@ -344,18 +514,20 @@
                   <div class="blog-card__wrapper">
                     <time class="blog-card__date" datetime="2022-11-05">05.11.2022</time>
                     <h3 class="blog-card__name">Выставка VR в Томске</h3>
-                    <p class="blog-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
+                    <!-- <p class="blog-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p> -->
+                    <div class="blog-card__link-button">
+                      <p class="blog-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
+                      <button type="button" class="blog-card__button-icon">
+                        <svg class="slider__icon" width="91px" height="60px">
+                          <use xlink:href="assets/icons/symbols.svg#slider_right">
+                        </svg>
+                      </button>
+                    </div>
                   </div>
-                  <div class="blog-card__link-button">
-                    <button type="button" class="blog-card__button-icon">
-                      <svg class="slider__icon" width="91px" height="60px">
-                        <use xlink:href="assets/icons/symbols.svg#slider_right">
-                      </svg>
-                    </button>
-                  </div>
+
                 </a>
               </article>
-              <article class="blog-card blog-card">
+              <article class="blog-card">
                 <a href="#" class="blog-card__link">
                   <picture class="blog-card__picture">
                     <!-- <source type="image/webp" srcset="@@image/webp"/> -->
@@ -365,15 +537,17 @@
                   <div class="blog-card__wrapper">
                     <time class="blog-card__date" datetime="2022-11-01">01.11.2022</time>
                     <h3 class="blog-card__name">Rocking radio в заброшенном ангаре</h3>
-                    <p class="blog-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
+                    <!-- <p class="blog-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p> -->
+                    <div class="blog-card__link-button">
+                      <p class="blog-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
+                      <button type="button" class="blog-card__button-icon">
+                        <svg class="slider__icon" width="91px" height="60px">
+                          <use xlink:href="assets/icons/symbols.svg#slider_right">
+                        </svg>
+                      </button>
+                    </div>
                   </div>
-                  <div class="blog-card__link-button">
-                    <button type="button" class="blog-card__button-icon">
-                      <svg class="slider__icon" width="91px" height="60px">
-                        <use xlink:href="assets/icons/symbols.svg#slider_right">
-                      </svg>
-                    </button>
-                  </div>
+
                 </a>
               </article>
 
@@ -432,9 +606,10 @@
                 </div>
 
               </div>
-              <div class="contacts__map">
+              <div class="" id="js-contactsMap"></div>
+              <!-- <div class="contacts__map-container">
                 <img class="" src="assets/images/map.jpg" alt="map">
-              </div>
+            </div> -->
             </div>
           </div>
         </section>
@@ -484,6 +659,7 @@
     </div>
 
   </footer>
+  <script src="scripts/main.min.js"></script>
 </body>
 
 </html>
