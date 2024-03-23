@@ -938,6 +938,10 @@ textarea {
   padding: 17px 20px 16px;
   color: #1f1e1e;
 }
+.field__select {
+  width: 100%;
+  min-width: 240px;
+}
 .field__select,
 .field__input {
   height: 55px;
@@ -949,7 +953,8 @@ textarea {
   width: 55px;
 }
 .field__input--w110 {
-  width: 110px;
+  max-width: 110px;
+  min-width: 99px;
 }
 .field__input--datetime {
   padding: 17px 13px 16px;
@@ -991,16 +996,21 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 30px;
-  -webkit-column-gap: 60px;
-     -moz-column-gap: 60px;
-          column-gap: 60px;
+  -webkit-column-gap: 6%;
+     -moz-column-gap: 6%;
+          column-gap: 6%;
   width: 100%;
 }
 .form__list--mb50 {
   margin-bottom: 50px;
 }
+.form__list--nowrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
 .form__group {
-  width: calc(50% - 30px);
+  max-width: 438px;
+  width: 100%;
 }
 .form__field {
   display: block;
@@ -1008,16 +1018,28 @@ textarea {
 }
 .form__field--w50 {
   width: calc(50% - 30px);
+  min-width: 240px;
 }
 .form__field--mb30 {
   margin-bottom: 30px;
 }
 .form__btn {
-  padding: 15px 156px;
+  padding: 15px 0;
+  width: calc(50% - 30px);
+  min-width: 240px;
+}
+.form__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .form__btn-close {
-  margin-left: 200px;
-  padding: 0;
+  padding: 15px 0;
+  width: calc(50% - 30px);
+  min-width: 240px;
   border: none;
   text-decoration: underline;
 }
@@ -1846,8 +1868,8 @@ textarea {
   max-width: 868px;
   width: 100%;
 }
-.about__title--mt {
-  margin-top: -120px;
+.about__title--2 {
+  grid-area: title;
 }
 .about__text {
   -ms-flex-item-align: end;
@@ -1859,13 +1881,17 @@ textarea {
   font-size: 18px;
   color: #1f1e1e;
 }
+.about__text--2 {
+  grid-area: text;
+  margin-left: auto;
+}
 .about__text--mb90 {
   margin-bottom: 90px;
 }
 .about__picture {
+  grid-area: picture1;
   position: relative;
   display: block;
-  width: 65.217%;
 }
 .about__picture::before {
   content: '';
@@ -1883,22 +1909,16 @@ textarea {
      object-fit: contain;
 }
 .about__block2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: grid;
+  grid-template-areas: "picture1 picture1 picture2" "title title picture2" "text text text";
+  gap: 60px;
+  grid-template-columns: 1fr 1fr 404px;
 }
 .about__picture2 {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  grid-area: picture2;
+  align-self: flex-end;
   position: relative;
   display: block;
-  margin-top: -280px;
-  max-width: 404px;
-  width: 30.284%;
 }
 .about__picture2::before {
   content: '';
@@ -2686,6 +2706,13 @@ textarea {
   .page-header__right-block {
     width: 152px;
   }
+  .pp {
+    min-width: 1144px;
+    padding: 90px 40px 50px;
+  }
+  .pp__container {
+    padding: 70px 137px 40px;
+  }
   .main-header__title {
     font-size: 35px;
   }
@@ -2737,6 +2764,9 @@ textarea {
   .slider__right {
     width: 67px;
     height: 40px;
+  }
+  .form__group {
+    width: calc(50% - 15px);
   }
   .card-event__title {
     min-height: 54px;
@@ -2861,6 +2891,17 @@ textarea {
   }
   .page-footer__border::after {
     margin-left: 26px;
+  }
+  .pp {
+    min-width: 688px;
+    padding: 72px 40px 50px;
+  }
+  .pp__container {
+    padding: 70px 40px 41px;
+  }
+  .pp__form {
+    max-width: 869px;
+    min-width: 608px;
   }
   .event__container {
     padding-left: 30px;
@@ -3042,6 +3083,27 @@ textarea {
   }
   .subscribe__check {
     margin-left: 20px;
+  }
+  .form__list--nowrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form__list {
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .card-event__title {
     min-height: 44px;
@@ -3315,6 +3377,17 @@ textarea {
   }
   .page-footer__form {
     margin: 0 auto;
+  }
+  .pp {
+    min-width: 280px;
+    padding: 80px 20px 50px;
+  }
+  .pp__container {
+    padding: 51px 20px 40px;
+  }
+  .pp__form {
+    max-width: 607px;
+    min-width: 240px;
   }
   .event__container {
     padding-left: 20px;
