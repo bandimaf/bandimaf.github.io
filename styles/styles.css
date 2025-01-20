@@ -14,6 +14,9 @@ h3 {
   margin: 0;
   padding: 0;
 }
+body {
+  overflow-x: hidden;
+}
 .header {
   padding: 12px 35px;
 }
@@ -332,11 +335,7 @@ h3 {
   font-size: 22px;
   font-weight: bold;
   line-height: 140%;
-}
-.card__price::after {
-  content: '₽';
-  margin-left: 5px;
-  text-decoration: none;
+  color: #231815;
 }
 .card__price--new {
   color: #E45302;
@@ -347,6 +346,7 @@ h3 {
   text-decoration: line-through;
 }
 .card__price--old::after {
+  content: last-child;
   text-decoration: none;
 }
 .card__price--disable {
@@ -485,8 +485,21 @@ h3 {
   }
 }
 @media (max-width: 770px) and (min-width: 391px) {
+  .card {
+    max-width: 320px;
+  }
+  .search-list {
+    max-width: 680px;
+  }
   .search-list__title {
     font-size: 32px;
+  }
+  .search-list__cards-list {
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 5.882%;
+       -moz-column-gap: 5.882%;
+            column-gap: 5.882%;
+    row-gap: 50px;
   }
 }
 @media (max-width: 770px) {
@@ -524,25 +537,36 @@ h3 {
   .bar-info {
     display: none;
   }
-  .card {
-    max-width: 320px;
-  }
   .card__img {
     max-height: 477px;
   }
+}
+@media (max-width: 390px) {
+  .card {
+    min-width: 155px;
+  }
+  .card__label {
+    max-width: 70px;
+    padding: 2px 14.5px;
+    font-size: 14px;
+  }
+  .card__name {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .card__price {
+    font-size: 16px;
+  }
   .search-list {
-    max-width: 680px;
+    max-width: 320px;
+  }
+  .search-list__title {
+    font-size: 24px;
   }
   .search-list__cards-list {
     grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 5.882%;
-       -moz-column-gap: 5.882%;
-            column-gap: 5.882%;
-    row-gap: 50px;
-  }
-}
-@media (max-width: 390px) {
-  .search-list__title {
-    font-size: 24px;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
   }
 }
